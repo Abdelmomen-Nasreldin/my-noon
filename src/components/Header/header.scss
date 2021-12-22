@@ -1,0 +1,332 @@
+//////// sorted as following :-
+// first__navbar
+// aside__controller
+// second__nav
+// show__categories
+// @media (max-width: 768px)
+// @media (max-width: 575px)
+// DropDown ==> categories
+
+body {
+  font-family: "Proxima Nova", "Helvetica Neue", Arial, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+header.mainHeader {
+  font-size: 0.9rem;
+
+  ul.nav {
+    .nav-cat {
+      font-weight: bold;
+    }
+  }
+
+  * {
+    color: #404553 !important;
+    font-size: 14px;
+    text-decoration: none !important;
+  }
+
+  .first__navbar {
+    background-color: rgb(254, 238, 0);
+
+    ul {
+      width: 100%;
+      align-items: center;
+
+      li {
+        display: flex;
+        align-items: center;
+
+        a {
+          span {
+            font-weight: 600;
+          }
+        }
+      }
+
+      li.header__li__search {
+        width: 50%;
+        padding: 0 30px;
+        flex: 1;
+
+        .header__search {
+          width: 100%;
+          height: 36px;
+          padding: 12px;
+          border: 0px;
+          border-radius: 5px;
+          outline: none;
+        }
+      }
+
+      li.language::after,
+      li.sign-in::after {
+        content: "";
+        position: relative;
+        width: 0.5px;
+        height: 20px;
+        background-color: #0003;
+      }
+    }
+  }
+
+  .aside__controller {
+    position: fixed;
+    z-index: 3;
+    top: 70px;
+    right: 4px;
+    font-size: 1.1rem;
+  }
+
+  .second__navbar {
+    position: relative;
+    z-index: 3;
+    background: #fcfbf4;
+
+    .dropdown {
+      background: #fcfbf4;
+
+      a {
+        color: #3866df;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .show__categories {
+    padding: 20px;
+    display: none;
+    position: absolute;
+    // top: 38px;
+    top: 38px;
+    width: 100%;
+    background-color: #fff;
+    // z-index: 11;
+    // display: flex;
+    justify-content: space-between;
+
+    .photos {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(10px, 100%));
+      gap: 6px;
+
+      a {
+        border: 1px solid rgba(231, 227, 227, 0.555);
+      }
+    }
+
+    // .show__categories:hover {
+    //   display: flex !important;
+    // }
+    .last2__photos {
+      display: grid;
+      grid-template-columns: 65% 35%;
+      gap: 10px;
+    }
+  }
+
+  .ant-dropdown .ant-dropdown-placement-bottomLeft {
+    min-width: 92px;
+    left: 653px;
+    top: 55px;
+    width: 150px !important;
+  }
+
+  .ant-dropdown-menu .ant-dropdown-menu-root .ant-dropdown-menu-vertical .ant-dropdown-menu-light {
+    width: 150px !important;
+  }
+}
+
+// .aside__controller{
+//     position: absolute;
+//     top: 30px;
+//     right: 4px;
+//     font-size: 1.1rem;
+//   }
+
+@media (max-width: 991px) {
+  .show__categories {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .BigHeader {
+    header.mainHeader {
+      /* .first__navbar {        
+      }
+      */
+
+      .second__navbar {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        // position: absolute;
+        width: 160px;
+        background: #feee00;
+        height: calc(100vh - 68px);
+        margin-left: -160px;
+        transition: 0.4s;
+      }
+
+      ul.nav {
+        flex-direction: column;
+        flex: 1;
+        justify-content: space-evenly;
+        align-items: baseline;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .BigHeader {
+    header.mainHeader {
+      margin-top: 62px;
+
+      .first__navbar {
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        ul {
+
+          // li {
+          //   a {
+          //     span {
+          //     }
+          //   }
+          // }
+          // li.header__li__search {
+          //   .header__search {
+          //   }
+          // }
+          li.language::after,
+          li.sign-in::after {
+            display: none;
+          }
+        }
+      }
+
+      .aside__controller {
+        top: 60px;
+        position: fixed !important;
+      }
+
+      .second__navbar {
+        height: calc(100vh - 60px);
+        position: fixed !important;
+      }
+    }
+  }
+
+  // dropDown css ////////////////////////////////////////////////////////////////
+}
+
+.dropdown_ALLCATEGORIES {
+  width: 227px;
+  border-right: 1px solid #eee;
+  position: relative;
+
+  // min-height: 200px;
+  .a_cat {
+    padding-left: 20px;
+    letter-spacing: 1.3px;
+  }
+
+  .dropdown-toggle::after {
+    margin-left: 2.3em;
+    vertical-align: 0;
+    font-size: 20px;
+  }
+
+  .dropdown-menu {
+    background-color: transparent;
+    padding: 15px 10px;
+
+    li {
+      padding: 8px 15px;
+      cursor: pointer;
+
+      a {
+        font-weight: 400;
+        padding: 0;
+      }
+    }
+  }
+
+  .dropdownDiv {
+    display: none;
+    position: absolute;
+    // min-width: 500px;
+    min-height: 440px;
+    background-color: #fcfbf4;
+
+    // background-color: #554646;
+    .dropdownDivOne {
+      width: 226px;
+      // background-color: #FCFBF4;
+      position: relative;
+      height: 100%;
+      z-index: 3;
+    }
+
+    .dropdownDivTwo {
+      padding: 15px;
+      min-width: 500px;
+      background-color: #fff;
+      flex: 1;
+
+      h4 {
+        font-weight: 700;
+        font-size: 17px;
+      }
+
+      a {
+        font-weight: 500;
+        padding-top: 0;
+      }
+    }
+  }
+
+  .dropdownDiv::before {
+    content: "";
+    position: absolute;
+    left: 226px;
+    width: 1px;
+    height: 100%;
+    background-color: #eee;
+  }
+}
+
+.dropdown:hover .dropdownDiv {
+  display: flex;
+}
+
+// .dropdown .dropdownDiv{   // just for test
+//   display: flex;
+// }
+.dropdown_ALLCATEGORIES:hover>.dropdown-menu {
+  display: block;
+  margin-top: 0;
+  width: 226px;
+  border-radius: 0;
+  border: 0;
+  // border-right: 1px solid #eee;
+}
+
+// .ant-dropdown .ant-dropdown-placement-bottomLeft {
+//   min-width: 92px;
+//   left: 653px;
+//   top: 55px;
+//   width: 150px !important;
+// }
+// .ant-dropdown-menu .ant-dropdown-menu-root .ant-dropdown-menu-vertical .ant-dropdown-menu-light{
+//   width:150px
+// }

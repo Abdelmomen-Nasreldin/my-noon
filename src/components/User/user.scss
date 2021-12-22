@@ -1,0 +1,55 @@
+.userComponent {
+  .icon-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    h2 {
+      margin: auto;
+    }
+    .trigger {
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  .ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal)
+    .ant-menu-item-selected {
+    background-color: #ffffffe3 !important;
+  }
+  #components-layout-demo-custom-trigger .trigger {
+    padding: 0 24px;
+    font-size: 18px;
+    line-height: 64px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+
+  #components-layout-demo-custom-trigger .trigger:hover {
+    color: #18ff2b;
+  }
+
+  #components-layout-demo-custom-trigger .logo {
+    height: 32px;
+    margin: 16px;
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+  // .userData{}
+  .ant-tooltip-inner {
+    background-color: rgb(254, 238, 0) !important;
+  }
+  .site-layout .site-layout-background {
+    background: rgb(255, 255, 255);
+  }
+  .sider {
+    background-color: rgb(254, 238, 0) !important;
+  }
+  .ant-menu-inline-collapsed-tooltip a,
+  .ant-menu-inline-collapsed-tooltip a:hover {
+    color: #161616 !important;
+  }
+  .ant-card-head {
+    background-color: #f1f3fa !important;
+  }
+}

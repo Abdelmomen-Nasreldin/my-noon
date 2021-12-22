@@ -1,0 +1,62 @@
+h6 {
+  margin-top: 10px;
+}
+
+.first__footer {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.first__footer .paras {
+  color: #7e859b;
+}
+
+.first__footer .paras p:first-child {
+  font-size: 17px;
+  font-weight: 700;
+  color: #404553;
+}
+
+.first__footer .paras p:last-child {
+  font-size: 12px;
+  margin: 0;
+}
+
+.first__footer__help div:first-of-type {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.first__footer__help div:first-of-type svg {
+  position: relative;
+  top: 4px;
+  left: 1.5px;
+}
+
+.first__footer__help div:nth-of-type(2) {
+  margin: 5px 10px;
+}
+
+.first__footer__help div:nth-of-type(2) span:first-of-type {
+  font-weight: 600;
+  font-size: 10px;
+  color: #7e859b;
+}
+
+.first__footer__help div:nth-of-type(2) a {
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  color: #000;
+}
+
+.first__footer__help div:nth-of-type(2) a:hover {
+  color: #636364;
+}
+
+.second {
+  margin: 0 25px;
+}
+/*# sourceMappingURL=footer.css.map */

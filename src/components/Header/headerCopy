@@ -1,0 +1,216 @@
+        //  <div className="dropdown d-none d-lg-block">
+        //     <a
+        //       className="btn dropdown-toggle a_cat"
+        //       id="dropdownMenuLink"
+        //       href="https://ant.design/components/dropdown"
+        //     >
+        //       ALL CATEGORIES
+        //     </a>
+
+        //     <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        //       {categories.map((cat) => {
+        //         return (
+        //           <>
+        //             <li
+        //               className="nav-item"
+        //               onMouseOver={() => subCatChanged(cat.id)}
+        //             >
+        //               <a className="nav-link" href={cat.link}>
+        //                 {cat.mainCat}
+        //               </a>
+        //             </li>
+        //           </>
+        //         );
+        //       })}
+        //     </ul>
+        //     <div className="dropdownDiv">
+        //       <div className="dropdownDivOne"></div>
+        //       <div className="dropdownDivTwo">
+        //         {/* <h4>{categories[x - 1].mainCat}</h4> */}
+        //         <hr className="m-2" />
+        //         <div className="d-flex">
+        //           <div className="w-50">
+        //             <h6>Most Popular</h6>
+        //             {/* All Catogories => subCategories */}
+        //             <ul className="nav flex-column">
+        //               {categories.map((cat) => {
+        //                 // console.log(cat.id);
+        //                 return (
+        //                   <>
+        //                     {cat.id === x &&
+        //                       cat.subCat.map((subCategory) => {
+        //                         return (
+        //                           <>
+        //                             <li
+        //                               className="nav-item"
+        //                               ref={elemRef_subCat}
+        //                             >
+        //                               <a className="nav-link" href={cat.link}>
+        //                                 {subCategory}
+        //                               </a>
+        //                             </li>
+        //                           </>
+        //                         );
+        //                       })}
+        //                   </>
+        //                 );
+        //               })}
+        //             </ul>
+        //           </div>
+        //           <div className="">
+        //             <h6>Top Brands</h6>
+        //             <ul className="nav flex-column">
+        //               {categories.map((cat) => {
+        //                 // console.log(cat.id);
+        //                 return (
+        //                   <>
+        //                     {cat.id === x &&
+        //                       cat.brands.map((subCategory) => {
+        //                         return (
+        //                           <>
+        //                             <li
+        //                               className="nav-item"
+        //                               ref={elemRef_subCat}
+        //                             >
+        //                               <a className="nav-link" href={cat.link}>
+        //                                 {subCategory}
+        //                               </a>
+        //                             </li>
+        //                           </>
+        //                         );
+        //                       })}
+        //                   </>
+        //                 );
+        //               })}
+        //             </ul>
+        //           </div>
+        //         </div>
+        //       </div>
+        //     </div>
+        //   </div> 
+
+
+
+
+  
+    //     <ul className="nav">
+    //     {categories.map((cat) => {
+    //       return (
+    //         <>
+    //           <li
+    //             className="nav-item"
+    //             // onMouseOver={mouseOver}
+    //             onMouseOver={() => CatChanged(cat.id)}
+    //             onMouseOut={mouseOut}
+    //           >
+    //             <a className="nav-link" href={cat.link}>
+    //               {cat.mainCat}
+    //             </a>
+    //           </li>
+    //         </>
+    //       );
+    //     })}
+    //   </ul>
+    //   <div
+    //     ref={elemRef_show__categories}
+    //     className="show__categories container-fluid "
+    //     onMouseOver={mouseOver}
+    //     onMouseOut={mouseOut}
+    //   >
+    //     <div className="row" style={{ flex: 1 }}>
+    //       <div className="col-2">
+    //         <h6>CATEGORIES</h6>
+    //         <ul className="nav flex-column">
+    //         {categories.map((cat) => {
+    //               // console.log(cat.id);
+    //               return (
+    //                 <>
+    //                   {cat.id === x &&
+    //                     cat.subCat.map((subCat) => {
+    //                       console.log(subCat);
+    //                       return (
+    //                         <>
+    //                           <li className="nav-item">
+    //                             <a className="nav-link" href={cat.link}>
+    //                               {subCat}
+    //                             </a>
+    //                           </li>
+    //                         </>
+    //                       );
+    //                     })}
+    //                 </>
+    //               );
+    //             })}
+    //         </ul>
+    //       </div>
+    //       <div className="col-4">
+    //         <h6>TOP BRANDS</h6>
+    //         <div>
+    //           <ul className="photos">
+    //             {/* showCategories brand Images */}
+    //             {categories.map((cat) => {
+                 
+    //               return (
+    //                 <>
+    //                   {cat.id === x &&
+    //                     cat.brandsImg.map((img) => {
+    //                       console.log(img);
+    //                       return (
+    //                         <>
+    //                           <li className="nav-item">
+    //                             <a className="nav-link" href={cat.link}>
+    //                               <img
+    //                                 src={img}
+    //                                 className="img-fluid"
+    //                                 alt="brand img"
+    //                               />
+    //                             </a>
+    //                           </li>
+    //                         </>
+    //                       );
+    //                     })}
+    //                 </>
+    //               );
+    //             })}
+    //           </ul>
+    //         </div>
+    //       </div>
+    //       <div className="col-6">
+    //         <div className="last2__photos h-100">
+    //           {/* <div> */}
+    //             {/* <ul> */}
+    //               {/* showCategories brand Images */}
+    //               {categories.map((cat) => {
+    //                 // console.log(cat.id);
+    //                 return (
+    //                   <>
+    //                     {cat.id === x &&
+    //                       cat.catImg.map((img) => {
+    //                         console.log(img);
+    //                         return (
+    //                           <>
+    //                             {/* <li
+    //                               className="nav-item"
+                                  
+    //                             > */}
+    //                               <div>
+    //                                 <a className="nav-link" href={cat.link}>
+    //                                   <img
+    //                                     src={img}
+    //                                     className="img-fluid h-100"
+    //                                     alt="cat img"
+    //                                   />
+    //                                 </a>
+    //                               </div>
+    //                             {/* </li> */}
+    //                           </>
+    //                         );
+    //                       })}
+    //                   </>
+    //                 );
+    //               })}
+               
+    //         </div>
+    //       </div>
+    //     </div>
+    //   </div>

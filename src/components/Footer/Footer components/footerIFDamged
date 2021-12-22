@@ -1,0 +1,226 @@
+<!-- {/* <div class="col-lg-2 col-md-4 col-sm-6">
+              <h6>FASHION</h6>
+              <ul class="nav flex-column" style={{ fontSize: "13px" }}>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Women's Fashion
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Men's Fashion
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Girls' Fashion
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Boys' Fashion
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Men's Watches
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Women's Watches
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Eyewear
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Bags & Luggage
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-sm-6">
+              <h6>HOME AND KITCHEN</h6>
+              <ul class="nav flex-column" style={{ fontSize: "13px" }}>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Kitchen & Dining
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Bedding
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Bath
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Home Decor
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Home Appliances
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Tools & Home Improvement
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Patio, Lawn & Garden
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Home Storage & Organisation
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6">
+              <h6>BEAUTY</h6>
+              <ul class="nav flex-column" style={{ fontSize: "13px" }}>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Women's Fragrance
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Men's Fragrance
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Make-Up
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Haircare
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Skincare
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Personal Care
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Tools & Accessories
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Men's Grooming
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6">
+              <h6>KIDS, BABY & TOYS</h6>
+              <ul class="nav flex-column" style={{ fontSize: "13px" }}>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Strollers, Prams & Accessories
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Car Seats
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Baby Clothing
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Feeding
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Bathing & Skincare
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Diapering
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Baby & Toddler Toys
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Toys & Games
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6">
+              <h6>TOP BRANDS</h6>
+              <ul class="nav flex-column" style={{ fontSize: "13px" }}>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Apple
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Samsung
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Nike
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Ray-Ban
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Tefal
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    L'Oreal Paris
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Chicco
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#home" class="nav-link p-0 text-muted">
+                    Tornado
+                  </a>
+                </li>
+              </ul>
+            </div>*/} -->

@@ -1,0 +1,164 @@
+.boldd {
+    font-weight: 600;
+    font-size: 14px;
+    color: rgb(75, 74, 74);
+}
+
+.normal-txt {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.stars {
+    color: #f2994a;
+    font-size: 20px;
+}
+
+.hiddenfont {
+    color: rgb(175, 171, 171);
+    font-size: 14px;
+}
+
+.scoreTag {
+    width: 50px;
+    height: 30px;
+    background-color: #f2994a;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.Rating {
+    clear: both;
+    padding: 20px;
+}
+
+.ratingcontainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.sameline {
+    display: flex;
+    flex-direction: row;
+}
+
+.samelinebtn {
+    display: flex;
+    flex-direction: row;
+}
+
+.oldprice {
+    text-decoration-line: line-through;
+}
+
+.newprice {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/* .Inclusive
+ {
+ 
+ }  */
+.semibold {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.Earn {
+    display: flex;
+    flex-direction: row;
+}
+
+.noonvip {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.vipimg {
+    width: 25px;
+}
+
+.date {
+    color: #61af02;
+}
+
+.lowquaintityred {
+    color: red;
+    font-size: 14px;
+}
+
+.addtocart {
+    width: 300px;
+    height: 50px;
+    background-color: #2b4cd7;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+}
+
+.quantity {
+    width: 70px;
+    height: 50px;
+    border: 1px solid rgb(107, 107, 109);
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.btn2 {
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.btn3 {
+    color: #2b4cd7;
+    border: 1px solid #2b4cd7;
+    border-radius: 5px;
+}
+
+.btndrop {
+    border: 1px solid rgb(113, 115, 248);
+    border-radius: 5px;
+
+    color: #3866df;
+    font-weight: bold;
+    height: 50px;
+}
+
+.btntext {
+    font-size: 14px;
+}
+
+.break {
+    height: 20px;
+    background-color: #e5e5f3;
+}
+
+.OverallRating {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(66, 65, 65);
+}
+
+.overviewrate {
+    color: #f4ab69;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.smallstars {
+    color: #f4ab69;
+}
+
+.listrate {
+    list-style: none;
+}

@@ -1,0 +1,16 @@
+#counter {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    line-height: 1;
+    background-color: rgb(56, 102, 223);
+    font-weight: 600;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
