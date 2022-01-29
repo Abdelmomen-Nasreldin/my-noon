@@ -20,7 +20,7 @@ import { UserOutlined } from '@ant-design/icons';
 const HeaderOne = () => {
   // let isLoggedIn = localStorage.getItem("isLoggedIn");
   const [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem("isLoggedIn"));
-  const [userName, setUsername] = useState(localStorage.getItem("username"));
+  const [userName, ] = useState(localStorage.getItem("username"));
   let navigate = useNavigate();
   const quantity = useSelector(state => state.cart.quant)
   const [search, setSearch] = useState("");

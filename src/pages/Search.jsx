@@ -9,7 +9,7 @@ const Search = () => {
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [productsPerPage] = useState(16);
-  let [searchParams, setSearchParams] = useSearchParams();
+  let [searchParams, ] = useSearchParams();
 
   useEffect(() => {
     const fetchProducts = async () => {

@@ -7,9 +7,9 @@ import { Link } from "react-router-dom";
 const HeaderFloatingLeft = ({ categories }) => {
   const [mouseOverCategoryID, setMouseOverCategoryID] = useState(1);
 
-  const [myMainCat, setMyMainCat] = useState("");
-  const [mySubCat, setMySubCat] = useState("");
-  const [myBrand, setMyBrand] = useState("");
+  const [, setMyMainCat] = useState("");
+  const [, setMySubCat] = useState("");
+  const [, setMyBrand] = useState("");
 
   console.log(categories);
   if (!categories || categories.length === 0) {

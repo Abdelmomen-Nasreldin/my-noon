@@ -10,8 +10,8 @@ const antIcon = <LoadingOutlined style={{ fontSize: 24 }} spin />;
 
 export default function OrderNew() {
     const imagesUrl = process.env.REACT_APP_API_URL + "/images/";
-    const [order, setOrder] = useState([]);
-    const [loading, setLoading] = useState(false);
+    const [order, ] = useState([]);
+    const [, setLoading] = useState(false);
     const [flag, setFlag] = useState(false);
     const [loopOrders, setLOOP] = useState([]);
     // const Orders = [];
@@ -36,9 +36,8 @@ export default function OrderNew() {
                     Object.keys(response.data).map((key, index) => {
 
                        
-                        setOrders( Orders.push(response.data[key]))
-                        console.log(response.data[key])
-                        console.log(Orders)
+                       return setOrders( Orders.push(response.data[key]))
+                       
                     });
 
                     Orders.map(order => {
@@ -63,7 +62,7 @@ export default function OrderNew() {
         };
 
         getProductbyId();
-    }, []);
+    }, [Orders]);
 
     setTimeout(() => {
         setFlag(true);

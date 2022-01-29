@@ -16,13 +16,13 @@ const antIcon = <LoadingOutlined style={{ fontSize: 24 }} spin />;
 // };
 const Order = () => {
   const imagesUrl = process.env.REACT_APP_API_URL + "/images/";
-  const [products, setProducts] = useState(() => []);
+  const [products, ] = useState(() => []);
   const [order, setOrder] = useState(() => []);
   const [loading, setLoading] = useState(false);
 
   // const [x, setX] = useState(() => "");
   // let x = "Rate";
-  const [successMsg, setSuccessMsg] = useState("");
+  const [, setSuccessMsg] = useState("");
   // const [loading, setLoading] = useState(false);
   const [errMsg, setErrMsg] = useState("");
   // const userId = localStorage.getItem("userId")
@@ -69,7 +69,7 @@ const Order = () => {
         setLoading(false);
       });
       // @ts-ignore
-  }, []);
+  }, [userId]);
 
   const cancel = (prdId) => {
     const userId = localStorage.getItem("userId");
