@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { ResetCart } from "../redux/LAMA/cartRedux";
 import axios from "axios";
 
@@ -8,17 +8,18 @@ export default function Paypal(props) {
   const total = props.order.amount;
   console.log("ttttttttttttttttttt");
   console.log(props.order.products);
-  const config = {
-    //change token with userToken
-    headers: {
-      token: localStorage.getItem("userToken"),
-      // token:
-      //   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxOTQ1NGNkYzI0MGFhNzlkNDYxMGViNiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzOTM1MTE2MCwiZXhwIjoxNjM5NjEwMzYwfQ._YHOK847zyTzTqCsDI9R_L_0zdc1Vk_EbgsEBmCIxk8",
-    },
-  };
+  
   const dispatch = useDispatch();
 
   useEffect(() => {
+    const config = {
+      //change token with userToken
+      headers: {
+        token: localStorage.getItem("userToken"),
+        // token:
+        //   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxOTQ1NGNkYzI0MGFhNzlkNDYxMGViNiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzOTM1MTE2MCwiZXhwIjoxNjM5NjEwMzYwfQ._YHOK847zyTzTqCsDI9R_L_0zdc1Vk_EbgsEBmCIxk8",
+      },
+    };
     window.paypal
       .Buttons({
         createOrder: (data, actions, err) => {
@@ -84,7 +85,7 @@ export default function Paypal(props) {
         },
       })
       .render(paypal.current);
-  }, []);
+  }, [dispatch,total,props.order]);
 
   return (
     <div className="text-center" style={{ position: "relative", zIndex: "0" }}>

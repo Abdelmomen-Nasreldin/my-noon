@@ -17,7 +17,7 @@ const antIcon = <LoadingOutlined style={{ fontSize: 24 }} spin />;
 const Order = () => {
   const imagesUrl = process.env.REACT_APP_API_URL + "/images/";
   const [products, setProducts] = useState(() => []);
-  const [order, setOrder] = useState(() => {});
+  const [order, setOrder] = useState(() => []);
   const [loading, setLoading] = useState(false);
 
   // const [x, setX] = useState(() => "");
@@ -40,30 +40,36 @@ const Order = () => {
       .get(`${process.env.REACT_APP_API_URL}/api/orders/find/${userId}`, config)
       // .get("http://localhost:5000/api/orders/find/61965b8bd77aff0d40a1d004")
       .then(function (response) {
-        setOrder(response.data[0]);
-        // console.log("zzzzzzzzzzz",order);
-        const urls = response.data[0].products.map(
-          (product) =>
-            `${process.env.REACT_APP_API_URL}/api/products/find/${product.productId}`
-        );
-        console.log(urls);
-        const promises = urls.map((url) =>
-          fetch(url).then((response) => response.json())
-        );
-        console.log(promises);
-        Promise.all(promises).then((data) => {
-          console.log(data);
-          setProducts(data);
-        });
-        console.log(promises);
-      })
+        const orders = response.data
+        console.log(orders);
+        return Promise.all(orders.map(order => Promise.all(order.products.map(
+          product => fetch(`${process.env.REACT_APP_API_URL}/api/products/find/${product.productId}`)
+          .then(data => data.json()))))).then(data => orders.map((order, index) => ({...order, products: data[index]})))
+      //   setOrder(response.data[0]);
+      //   // console.log("zzzzzzzzzzz",order);
+      //   const urls = response.data[0].products.map(
+      //     (product) =>
+      //       `${process.env.REACT_APP_API_URL}/api/products/find/${product.productId}`
+      //   );
+      //   console.log(urls);
+      //   const promises = urls.map((url) =>
+      //     fetch(url).then((response) => response.json())
+      //   );
+      //   console.log(promises);
+      //   Promise.all(promises).then((data) => {
+      //     console.log(data);
+      //     setProducts(data);
+      //   });
+      //   console.log(promises);
+      }).then((orders) => setOrder(orders))
       .catch((err) => {
         setErrMsg(err.message);
       })
       .finally(() => {
         setLoading(false);
       });
-  }, [userId]);
+      // @ts-ignore
+  }, []);
 
   const cancel = (prdId) => {
     const userId = localStorage.getItem("userId");

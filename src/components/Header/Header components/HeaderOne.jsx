@@ -119,7 +119,7 @@ const HeaderOne = () => {
                   className="nav-link d-flex"
                   to="/"
                 >
-                  <div className="egyptFlag mx-2 d-flex d-none d-md-block">
+                  <div className="egyptFlag mx-2 d-flex d-none d-md-flex align-items-center">
                     <img
                       src={imagesUrl + "eg.svg"}
                       // src="images/header/eg.svg"
@@ -196,7 +196,7 @@ const HeaderOne = () => {
                   <Link
                     to="/User"
                     className={
-                      "ant-dropdown-link mx-2 d-flex align-items-center text-center fw-bold " + (isLoggedIn=="true" ? "d-block" : "d-none")
+                      "ant-dropdown-link mx-2 d-flex align-items-center text-center fw-bold " + (isLoggedIn==="true" ? "d-block" : "d-none")
                     }
                     onClick={(e) => e.preventDefault()}
                   >

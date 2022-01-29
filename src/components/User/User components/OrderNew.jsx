@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Card, Button, Alert } from "antd";
+import { Card} from "antd";
 import RatingProduct from "./RatingProduct.jsx";
 import { Spin } from 'antd';
 import { LoadingOutlined } from '@ant-design/icons';
@@ -10,7 +10,6 @@ const antIcon = <LoadingOutlined style={{ fontSize: 24 }} spin />;
 
 export default function OrderNew() {
     const imagesUrl = process.env.REACT_APP_API_URL + "/images/";
-    const [products, setProducts] = useState([]);
     const [order, setOrder] = useState([]);
     const [loading, setLoading] = useState(false);
     const [flag, setFlag] = useState(false);

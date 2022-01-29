@@ -21,7 +21,7 @@ const Search = () => {
     };
 
     fetchProducts();
-  }, []);
+  }, [searchParams]);
 
   // Get current products
   const indexOfLastProduct = currentPage * productsPerPage;

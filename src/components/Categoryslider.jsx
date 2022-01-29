@@ -41,7 +41,7 @@ const Categoryslider = ({ catName }) => {
 
 
         getProducts();
-    }, [catName])
+    }, [catName,componentMounted])
 
     const Loading = () => {
         return (

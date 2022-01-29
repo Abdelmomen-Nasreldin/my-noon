@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import Paypal from "../components/Paypal";
 import { useParams } from "react-router-dom";
 const Checkout = () => {
-  const [checkout, setCheckOut] = useState(false);
   const total = useParams();
   return (
     <Paypal total={total} />

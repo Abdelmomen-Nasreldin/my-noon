@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { useState } from "react";
 import Paypal from "./../Paypal";
 export default function CartAside(props) {
@@ -154,7 +154,7 @@ export default function CartAside(props) {
               <Paypal order={order} />
             ) : (
               <button
-                disabled={city == "" || addressDetails == ""}
+                disabled={city === "" || addressDetails === ""}
                 className="btn btn-primary text-white text-uppercase"
                 style={{ width: "100%" }}
                 onClick={handleCheckOut}

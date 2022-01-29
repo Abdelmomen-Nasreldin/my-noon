@@ -71,7 +71,7 @@ export default function ProductDetails() {
               src={ImageUrl + product.imageSrc}
               alt={product.brand}
               height="400px"
-              width="400px"
+              maxWidth="400px"
             />
           </div>
           <div className="col-lg-4">

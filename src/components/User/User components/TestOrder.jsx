@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Card, Button, Alert } from "antd";
+import { Card } from "antd";
 import axios from "axios";
 const TestOrder = () => {
   const [orders, setOrders] = useState([]);
@@ -8,13 +8,13 @@ const TestOrder = () => {
   const [products, setProducts] = useState([]);
   // const [order, setOrder] = useState(() => {});
   const [loading, setLoading] = useState(false);
-  const userId = localStorage.getItem("userId");
-  const config = {
-    //change token with userToken
-    headers: {
-      token: localStorage.getItem("userToken"),
-    },
-  };
+  // const userId = localStorage.getItem("userId");
+  // const config = {
+  //   //change token with userToken
+  //   headers: {
+  //     token: localStorage.getItem("userToken"),
+  //   },
+  // };
   useEffect(() => {
     const userId = localStorage.getItem("userId");
     const config = {
@@ -26,8 +26,8 @@ const TestOrder = () => {
     setLoading(true);
     axios
       // .get("https://noon-ecommerce.herokuapp.com/api/orders/find/61965b8bd77aff0d40a1d004",
-      // .get(`${process.env.REACT_APP_API_URL}/api/orders/find/${userId}`, config)
-      .get("http://localhost:5000/api/orders/61b74fa7c9d01e682c3cc6e1")
+      .get(`${process.env.REACT_APP_API_URL}/api/orders/find/${userId}`, config)
+      // .get("http://localhost:5000/api/orders/61b74fa7c9d01e682c3cc6e1")
       .then(function (response) {
         // const urls = response.data[2].products.map(
         //   (product) =>
@@ -70,7 +70,7 @@ const TestOrder = () => {
       .finally(() => {
         setLoading(false);
       });
-  }, []);
+  }, [links]);
 //   const testUrl = () => {
 //     axios
 //       .get(`${process.env.REACT_APP_API_URL}/api/orders/find/${userId}`, config)

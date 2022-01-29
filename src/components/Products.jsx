@@ -23,7 +23,7 @@ function Products() {
             }
         }
         getProducts();
-    }, [])
+    }, [componentMounted,filter])
 
     const Loading = () => {
         return (
@@ -63,7 +63,7 @@ function Products() {
                                     <div class="card-body">
                                         <h5 class="card-title mb-0">{product.title.substring(0, 12)}...</h5>
                                         <p class="card-text lead ">${product.price}</p>
-                                        <a href="#" class="btn btn-primary">View Product</a>
+                                        <a href="#d" class="btn btn-primary">View Product</a>
                                     </div>
                                 </div>
                             </div>

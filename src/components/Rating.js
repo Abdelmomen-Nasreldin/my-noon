@@ -26,7 +26,7 @@ function Rating({ prdId, setRate }) {
     };
 
     getRatingbyId();
-  }, [prdId]);
+  }, [prdId,setRate]);
 
   return (
     <div className="text-center">

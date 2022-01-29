@@ -1,7 +1,7 @@
 // floating left categories which contain the div of All CATEGORIES button when mouseOver
 // 1- the div of All CATEGORIES button => all categories + top brands + most popular
 
-import { Skeleton, Spin } from "antd";
+import {  Spin } from "antd";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 const HeaderFloatingLeft = ({ categories }) => {

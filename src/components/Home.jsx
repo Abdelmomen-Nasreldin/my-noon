@@ -1,5 +1,4 @@
 import React from 'react'
-import Products from './Products'
 import Ads from './Ads'
 import AdsCarousel from './AdsCarousel'
 import RoundedCategories from './RoundedCategories'

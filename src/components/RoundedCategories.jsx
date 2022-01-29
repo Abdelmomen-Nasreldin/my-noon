@@ -20,36 +20,36 @@ export default function RoundedCategories() {
         getProducts();
     }, [])
 
-    const filterProduct = (cat) => {
-        const updatedList = data.filter((x) => x.category === cat);
-        setFilter(updatedList);
-    }
+    // const filterProduct = (cat) => {
+    //     const updatedList = data.filter((x) => x.category === cat);
+    //     setFilter(updatedList);
+    // }
     return (
         <>
             <div class='container p-5'>
                 <Row >
 
-                    <Col style={{ cursor: 'pointer' }} >
+                    <Col style={{ cursor: 'pointer' }} className="text-center">
                         <Image type="image" src="https://k.nooncdn.com/cms/pages/20211212/aed3041d6c2cfd025c9c3191e76ac81f/en_cb-11.png" /></Col>
 
-                    <Col style={{ cursor: 'pointer' }}>
+                    <Col style={{ cursor: 'pointer' }}className="text-center" >
                         <Image type="image" src="https://k.nooncdn.com/cms/pages/20211212/aed3041d6c2cfd025c9c3191e76ac81f/en_cb-07.png" /></Col>
 
-                    <Col style={{ cursor: 'pointer' }}>
+                    <Col style={{ cursor: 'pointer' }}className="text-center" >
                         <Image type="image" src="https://k.nooncdn.com/cms/pages/20211212/aed3041d6c2cfd025c9c3191e76ac81f/en_cb-06.png" /></Col>
 
 
-                    <Col style={{ cursor: 'pointer' }}>
+                    <Col style={{ cursor: 'pointer' }}className="text-center" >
                         <Image type="image" src="https://k.nooncdn.com/cms/pages/20211212/aed3041d6c2cfd025c9c3191e76ac81f/en_cb-09.png" /></Col>
 
 
-                    <Col style={{ cursor: 'pointer' }}>
+                    <Col style={{ cursor: 'pointer' }}className="text-center" >
                         <Image type="image" src="https://k.nooncdn.com/cms/pages/20211212/aed3041d6c2cfd025c9c3191e76ac81f/en_cb-03.png" /></Col>
 
-                    <Col style={{ cursor: 'pointer' }}>
+                    <Col style={{ cursor: 'pointer' }}className="text-center" >
                         <Image type="image" src="https://k.nooncdn.com/cms/pages/20211212/aed3041d6c2cfd025c9c3191e76ac81f/en_cb-08.png" /></Col>
 
-                    <Col style={{ cursor: 'pointer' }}>
+                    <Col style={{ cursor: 'pointer' }}className="text-center" >
                         <Image type="image" src="https://k.nooncdn.com/cms/pages/20211212/aed3041d6c2cfd025c9c3191e76ac81f/en_cb-10.png" /></Col>
 
                     {/* <input width="150px" onClick={() => filterProduct("Baby")}

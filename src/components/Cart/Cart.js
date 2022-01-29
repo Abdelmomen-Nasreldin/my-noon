@@ -6,7 +6,7 @@ import CartItem from "../CartItem/CartItem";
 import CartAside from "../CartAside/CartAside";
 import { addProduct, delProduct } from "../../redux/LAMA/cartRedux";
 import "./Cart.css";
-import Paypal from "./../Paypal";
+// import Paypal from "./../Paypal";
 
 const Cart = () => {
   //const state = useSelector((state) => state.handleCart)

@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import Skeleton from 'react-loading-skeleton'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { useNavigate } from "react-router-dom";
-import { useSearchParams } from 'react-router-dom';
-import { Row } from 'react-bootstrap'
 const NewCategorySlider = ({ catName }) => {
     let navigate = useNavigate()
     const goToProductDetails = (productId) => {
@@ -45,7 +42,7 @@ const NewCategorySlider = ({ catName }) => {
 
 
         getProducts();
-    }, [catName])
+    }, [catName,componentMounted,filter])
 
     const Loading = () => {
         return (
@@ -102,7 +99,7 @@ const NewCategorySlider = ({ catName }) => {
                                 <h5 class="card-title fw-normal fs-6 text-truncate"> {product.title}... </h5>
                                 <p class="card-text fs-5">EGP <span class="fw-normal">{product.price}</span> </p>
                                 <p class="card-text justify-content-between">
-                                    <img width="70px" src="https://z.nooncdn.com/s/app/com/noon/images/fulfilment_express_v2-en.svg" class="img img-responsive" />
+                                    <img width="70px" src="https://z.nooncdn.com/s/app/com/noon/images/fulfilment_express_v2-en.svg" class="img img-responsive" alt=""/>
                                     <span class="fa fa-star float-end" style={{ color: 'orange', fontWeight: 'bold' }} > {/*product.rating.rate*/}</span> </p>
 
                             </div>
